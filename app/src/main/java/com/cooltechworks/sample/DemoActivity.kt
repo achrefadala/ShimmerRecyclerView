@@ -26,7 +26,6 @@ import com.cooltechworks.sample.adapters.CardAdapter
 import com.cooltechworks.sample.utils.BaseUtils
 import kotlinx.android.synthetic.main.activity_list.*
 
-
 class DemoActivity : AppCompatActivity() {
 
     private lateinit var mAdapter: CardAdapter

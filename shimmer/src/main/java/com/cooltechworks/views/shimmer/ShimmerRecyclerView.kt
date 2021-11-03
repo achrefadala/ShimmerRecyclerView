@@ -156,7 +156,6 @@ class ShimmerRecyclerView : RecyclerView {
     fun setDemoLayoutManager(type: LayoutMangerType) {
         mLayoutMangerType = type
     }
-
     /**
      * Sets the number of demo views should be shown in the shimmer adapter.
      *
@@ -267,5 +266,4 @@ class ShimmerRecyclerView : RecyclerView {
         } else {
             resources.getColor(id)
         }
-
 }

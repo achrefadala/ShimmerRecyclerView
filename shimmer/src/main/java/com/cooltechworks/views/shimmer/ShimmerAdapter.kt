@@ -51,6 +51,7 @@ class ShimmerAdapter : RecyclerView.Adapter<ShimmerViewHolder>() {
         holder.bind()
     }
 
+
     override fun getItemCount() = mItemCount
 
 
