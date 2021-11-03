@@ -1,8 +1,5 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ShimmerRecyclerView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5058)
-[![Build Status](https://travis-ci.org/sharish/ShimmerRecyclerView.svg?branch=master)](https://travis-ci.org/sharish/ShimmerRecyclerView)
-
 # ShimmerRecyclerView
-
+Migrate ShimmerRecyclerView to AndroidX
 
 Intro
 ------
@@ -29,31 +26,6 @@ There are two kinds of shimmer animation which you can see here:
 |     List Demo                |        Grid Demo              |
 | ----------------------------  | ----------------------------- |
 | <img src='screenshots/second_list_demo.gif' height=444 width=250 /> | <img src='screenshots/second_grid_demo.gif' height=444 width=250 />   |
-
-
-### Shimmer effect types
-
-1. As you can see the first demo examples show that the whole ViewHolder item is animated. To achieve the desired effect, the children of the ShimmerLayout should have a nontransparent background.
-2. You can achieve the second kind of shimmer effect by adding only one ViewGroup child to the ShimmerLayout with a transparent background. This ViewGroup will have the other views with nontransparent backgrounds on which the effect will be seen.
-
-   You may wonder how can you add background to the root view of the ViewHolder, if you do not have direct access to the ShimmerLayout and the only child has a nontransparent background. The solution for this is to use the `shimmer_demo_view_holder_item_background` attribute.
-
-### Attributes and Methods
-
-Following are the attributes and methods to initialise the demo views.
-
-| XML Attributes | Java Methods | Explanation |
-| -------------  | ------------ | ----------- | 
-|```app:shimmer_demo_child_count``` | ```setDemoChildCount(int)``` | Integer value that sets the number of demo views should be present in shimmer adapter. |
-|```app:shimmer_demo_layout``` | ```setDemoLayoutReference(int)``` | Layout reference to your demo view. Define your my_demo_view.xml and refer the layout reference here. |
-|```app:shimmer_demo_layout_manager_type``` | ```setDemoLayoutManager(LayoutManagerType)``` | Layout manager of demo view. Can be one among linear_vertical or linear_horizontal or grid. |
-|```app:shimmer_demo_shimmer_color``` | ``` - ``` | Color reference or value. It can be used to change the color of the shimmer line. |
-|```app:shimmer_demo_angle``` | ``` - ``` | Integer value between 0 and 30 which can modify the angle of the shimmer line. The default value is zero. |
-|```app:shimmer_demo_mask_width``` | ``` setDemoShimmerMaskWidth(float) ``` | Float value between 0 and 1 which can modify the width of the shimmer line. The default value is 0.5. |
-|```app:shimmer_demo_view_holder_item_background``` | ``` - ``` | Color or an xml drawable for the ViewHolder background if you want to achieve the second type of shimmer effect. |
-|```app:shimmer_demo_reverse_animation``` | ``` - ``` | Defines whether the animation should be reversed. If it is true, then the animation starts from the right side of the View. Default value is false. |
-
-
 
 Usage
 --------
@@ -93,7 +65,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+	implementation 'com.github.achrefadala:ShimmerRecyclerView:v1.5'
 }
 ```
 
