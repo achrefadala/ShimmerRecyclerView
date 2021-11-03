@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
 Copyright 2017 Harish Sridharan
 
 
@@ -29,6 +28,7 @@ limitations under the License.
 
         <activity
             android:name="com.cooltechworks.sample.MainActivity"
+            android:exported="true"
             android:theme="@style/AppTheme">
 
             <intent-filter>
@@ -39,7 +39,6 @@ limitations under the License.
 
         <activity
             android:name="com.cooltechworks.sample.DemoActivity"
-            android:theme="@style/AppThemeGrid">
-        </activity>
+            android:theme="@style/AppThemeGrid"></activity>
     </application>
 </manifest>
