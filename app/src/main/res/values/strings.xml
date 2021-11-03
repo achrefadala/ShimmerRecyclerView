@@ -22,6 +22,7 @@ limitations under the License.
     <string name="grid_demo">Grid Demo</string>
     <string name="second_list_demo">Second List Demo</string>
     <string name="second_grid_demo">Second Grid Demo</string>
+    <string name="grid_zoom_demo">Zoom Grid Demo</string>
 
     <string name="ab_list_title">Stories to read</string>
     <string name="ab_grid_title">Offers Zone</string>

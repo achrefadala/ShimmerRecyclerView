@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         createClickListener(grid_demo_button, BaseUtils.TYPE_GRID)
         createClickListener(list_second_demo_button, BaseUtils.TYPE_SECOND_LIST)
         createClickListener(grid_second_demo_button, BaseUtils.TYPE_SECOND_GRID)
+        createClickListener(grid_zoom_button, BaseUtils.TYPE_GRID_ZOOM)
     }
 
     private fun createClickListener(button: Button, demoType: Int) {

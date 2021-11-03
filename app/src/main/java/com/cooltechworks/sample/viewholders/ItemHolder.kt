@@ -30,6 +30,7 @@ import com.cooltechworks.sample.R
 import com.cooltechworks.sample.models.ItemCard
 
 import com.cooltechworks.sample.utils.BaseUtils.TYPE_GRID
+import com.cooltechworks.sample.utils.BaseUtils.TYPE_GRID_ZOOM
 import com.cooltechworks.sample.utils.BaseUtils.TYPE_LIST
 import com.cooltechworks.sample.utils.BaseUtils.TYPE_SECOND_GRID
 import com.cooltechworks.sample.utils.BaseUtils.TYPE_SECOND_LIST
@@ -52,8 +53,10 @@ class ItemHolder private constructor(itemView: View) : RecyclerView.ViewHolder(i
     companion object {
 
         fun newInstance(container: ViewGroup, type: Int): ItemHolder {
-            val root = LayoutInflater.from(container.context).inflate(getLayoutResourceId(type),
-                    container, false)
+            val root = LayoutInflater.from(container.context).inflate(
+                getLayoutResourceId(type),
+                container, false
+            )
 
             return ItemHolder(root)
         }
@@ -63,6 +66,7 @@ class ItemHolder private constructor(itemView: View) : RecyclerView.ViewHolder(i
                 TYPE_LIST -> R.layout.layout_news_card
                 TYPE_SECOND_LIST -> R.layout.layout_second_news_card
                 TYPE_GRID, TYPE_SECOND_GRID -> R.layout.layout_ecom_item
+                TYPE_GRID_ZOOM -> R.layout.layout_ecom_zoom_item
                 else -> 0
             }
         }
